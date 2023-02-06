@@ -1,0 +1,34 @@
+.DetailModel {
+  display: flex;
+  flex-direction: column;
+
+  /* flex-wrap: wrap; */
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 23px;
+  background-color: bisque;
+}
+
+.FlagModel {
+  height: 40%;
+  width: 40%;
+  border: 1px solid black;
+}
+
+.DetailActivities {
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  justify-content: space-around;
+}
+
+.h3model {
+  font-size: 70px;
+}
+
+.ActivityCardContainer {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-left: 1cm;
+  gap: 1cm;
+}

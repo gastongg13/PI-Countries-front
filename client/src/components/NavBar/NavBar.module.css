@@ -1,0 +1,21 @@
+.NavBarStyle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  /* background-color: #efd6cf; */
+  background-image: url(../../assets/imagenFondo.png);
+  background-position: 20cm;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.link {
+  color: rgb(6, 5, 5);
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+.link:hover {
+  color: rgb(175, 167, 239);
+}

@@ -1,0 +1,77 @@
+.FormModel {
+  background-color: brown;
+  display: flex;
+  margin-top: 20px;
+  /* margin: 50px 0; */
+  /* padding: 25px; */
+  /* box-sizing: content-box; */
+  /* flex-direction: column; */
+  font-family: "Oswald", sans-serif;
+  font-size: 1cm;
+}
+
+.ButtonFormModel {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+}
+
+.InputModel {
+  font-size: 0.7cm;
+}
+
+.CountriesAdded {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  display: flex;
+  border: 1px solid black;
+}
+
+.FormContainer {
+  display: flex;
+  border: 2px solid black;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* align-items: center; */
+  width: 60%;
+  /* gap: 20px; */
+  margin: 60px auto;
+  background-color: white;
+}
+
+.ErrorSpan {
+  font-size: 14px;
+  font-weight: bold;
+  color: crimson;
+}
+
+.NotVisible {
+  visibility: hidden;
+  height: 16px;
+}
+
+.FormImage {
+  background-image: url(https://elordenmundial.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2015/11/LoTW_Flags-943x1024.jpg.webp);
+  background-size: cover;
+  flex: 1;
+  /* position: relative; */
+  z-index: 10;
+}
+
+/* .FormImage::after {
+  content: "";
+  background-image: url(https://elordenmundial.com/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2015/11/LoTW_Flags-943x1024.jpg.webp);
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0.6;
+  z-index: 10; */
+/* } */

@@ -1,0 +1,32 @@
+.LandingImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image: url("https://i.pinimg.com/originals/c7/13/48/c71348857d3d518a28bd83238f8303fc.jpg");
+  height: 1000px;
+  width: 2000px;
+  /* background-repeat: repeat; */
+
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* position: relative; */
+}
+
+.LandingText {
+  display: flex;
+  justify-content: center;
+  margin: 700px;
+
+  padding: 50px;
+  background: 100px black;
+  border-radius: 100cm;
+}
+
+.link {
+  color: #fff;
+}
+.link:hover {
+  color: rgb(250, 231, 253);
+}

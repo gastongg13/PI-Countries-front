@@ -1,0 +1,13 @@
+.CardsContainerStyle {
+  background-image: url(../../assets/imagenFondo.png);
+  /* background-size: 100%; */
+
+  background-position: 10cm;
+  display: flex;
+  /* border: 1px solid black; */
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  padding-top: 1cm;
+  padding-bottom: 8cm;
+}

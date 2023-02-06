@@ -1,0 +1,12 @@
+/* .HomeComponent {
+  border: 1px solid black;
+} */
+
+.FilterModel {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.label {
+  font-family: "Oswald", sans-serif;
+}

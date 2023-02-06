@@ -1,0 +1,30 @@
+.CardStyle {
+  background-image: url(../../assets/imagenFondo.png);
+  background-position: 10cm;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  width: 20rem;
+  height: 20rem;
+  background-color: rgb(237, 100, 100);
+  border: 2px solid black;
+  margin-bottom: 30mm;
+  /* margin-top: 100mm; */
+  border-radius: 10px;
+  text-align: center;
+}
+
+.FlagModel {
+  height: 12rem;
+  width: 90%;
+}
+
+.link {
+  color: rgb(6, 5, 5);
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+}
+.link:hover {
+  color: rgb(73, 72, 74);
+}
