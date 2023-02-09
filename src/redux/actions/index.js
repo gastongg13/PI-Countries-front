@@ -6,10 +6,11 @@ import {
   GET_ACTIVITIES,
 } from "./constants";
 import axios from "axios";
+const { REACT_APP_URL } = process.env;
 
 const getAllCountries = () => {
   return async function (dispatch) {
-    const allCountries = await axios.get("http://localhost:3001/countries/");
+    const allCountries = await axios.get(`${REACT_APP_URL}/countries/`);
 
     dispatch({ type: GET_ALL_COUNTRIES, payload: allCountries.data });
   };
@@ -17,7 +18,7 @@ const getAllCountries = () => {
 
 const getCountryById = (id) => {
   return async function (dispatch) {
-    const country = await axios.get(`http://localhost:3001/countries/${id}`);
+    const country = await axios.get(`${REACT_APP_URL}/countries/${id}`);
 
     dispatch({ type: GET_COUNTRY_BY_ID, payload: country.data });
   };
@@ -26,7 +27,7 @@ const getCountryById = (id) => {
 const getCountriesByName = (name) => {
   return async function (dispatch) {
     const countries = await axios.get(
-      `http://localhost:3001/countries?name=${name}`
+      `${REACT_APP_URL}/countries?name=${name}`
     );
 
     dispatch({ type: GET_COUNTRIES_BY_NAME, payload: countries.data });
@@ -56,7 +57,7 @@ const getFilteredByContinent = (continent, countries) => {
 };
 
 const getActivities = () => async (dispatch) => {
-  const activities = await axios.get("http://localhost:3001/activities");
+  const activities = await axios.get(`${REACT_APP_URL}/activities`);
 
   dispatch({ type: GET_ACTIVITIES, payload: activities.data });
 };
@@ -64,7 +65,7 @@ const getActivities = () => async (dispatch) => {
 const submitForm = async (formData) => {
   const aux = await axios({
     method: "post",
-    url: "http://localhost:3001/activities/",
+    url: `${REACT_APP_URL}/activities/`,
     data: formData,
   });
 
@@ -73,7 +74,7 @@ const submitForm = async (formData) => {
 };
 
 const deleteActivityById = async (id, countryId) => {
-  const aux = await axios.delete(`http://localhost:3001/activities/${id}`, {
+  const aux = await axios.delete(`${REACT_APP_URL}/activities/${id}`, {
     data: { countryId },
   });
 
